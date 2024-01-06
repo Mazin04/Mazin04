@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --btn-gradient: var(linear-gradient(to bottom right, #4CAF50, #001F3F));
+}
+
+@font-face {
+    font-family: 'Work-Sans';
+    src: url(../assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+
+@-webkit-keyframes rainbow {
+    from {
+        -webkit-filter: hue-rotate(10deg);
+    }
+
+    to {
+        -webkit-filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes rainbow {
+    from {
+        -webkit-filter: hue-rotate(10deg);
+        filter: hue-rotate(10deg);
+    }
+
+    to {
+        -webkit-filter: hue-rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
+}
+
+h1 {
+    font-family: 'Work-Sans';
+}
+
+#hi {
+    background: linear-gradient(to right, rgb(0, 102, 255), lime);
+    color: transparent;
+    background-clip: text;
+}
+
+#btnDownload {
+    color: white;
+    background: linear-gradient(to right, rgb(0, 102, 255), lime);
+    background-repeat: no-repeat;
+    border-radius: 9999px;
+}
+
+#aDownload {
+    padding: 6px 5px;
+    width: 90%;
+    background-color: rgb(10 10 10);
+    ;
+    border-radius: 9999px;
+    transition: 0.5s all linear;
+}
+
+#aDownload:hover {
+    background-color: transparent;
+}
+
+#circleFoto {
+    box-shadow: 4px 4.5px 6px rgba(74, 173, 74, 0.7);
+}
