@@ -8,7 +8,7 @@ export function Navbar() {
     const PROYECTOS = "Projects"
 
     return (
-        <nav className="fixed top-0 w-screen bg-black/50 backdrop-blur-sm z-50">
+        <nav className="fixed top-0 w-screen bg-black/50 backdrop-blur-md z-50">
             <div className="h-10vh w-full left-0 right-0 flex justify-between text-white lg:py-5 px-10 py-4">
                 <div className="flex items-center justify-center lg:justify-start sm:justify-start md:justify-start flex-1">
                     <ul className="text-3xl">
