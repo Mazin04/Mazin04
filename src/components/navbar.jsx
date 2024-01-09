@@ -8,13 +8,13 @@ export function Navbar() {
     const PROYECTOS = "Projects"
 
     return (
-        <nav className="fixed top-0 w-screen bg-black/50  backdrop-blur-sm z-50">
+        <nav className="fixed top-0 w-screen bg-black/50 backdrop-blur-sm z-50">
             <div className="h-10vh w-full left-0 right-0 flex justify-between text-white lg:py-5 px-10 py-4">
-                <div className="flex items-center flex-1">
+                <div className="flex items-center justify-center lg:justify-start sm:justify-start md:justify-start flex-1">
                     <ul className="text-3xl">
                         <Link spy={true} smooth={true} className="flex flex-row items-center gap-4" to="Top">
                             <img draggable="false" className="relative w-16 cursor-pointer" src="src\assets\logo.webp"></img>
-                            <li id="nombre" className="cursor-pointer">{TITULO}</li>
+                            <li id="nombre" className="cursor-pointer lg:flex md:flex hidden">{TITULO}</li>
                         </Link>
                     </ul>
                 </div>

@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Kanit-Semi';
+    src: url(../assets/fonts/Kanit-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Kanit';
+    src: url(../assets/fonts/Kanit-Regular.ttf);
+}
+
+
+#myName{
+    font-family: "Kanit-Semi";
+    background: linear-gradient(to right, rgb(0, 100, 255), lime);
+    color: transparent;
+    background-clip: text;
+}

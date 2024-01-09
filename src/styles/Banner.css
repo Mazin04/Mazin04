@@ -68,3 +68,8 @@ h1 {
 #circleFoto {
     box-shadow: 4px 4.5px 6px rgba(74, 173, 74, 0.7);
 }
+
+.lottie{
+    align-items: center;
+    width: 90%;
+}

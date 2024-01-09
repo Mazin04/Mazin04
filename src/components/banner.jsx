@@ -1,4 +1,6 @@
 import '../styles/Banner.css'
+import Lottie from "lottie-react";
+import animationData from '../assets/Anim.json'
 import { TypeAnimation } from 'react-type-animation'
 
 
@@ -39,18 +41,10 @@ export function Banner() {
 
                 <div className="col-span-12 mt-8 sm:mt-0 sm:col-span-4 flex justify-center">
                     <div id="circleFoto" className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] relative -z-0">
-                        <img
-                            draggable="false"
-                            src="src/assets/me.png"
-                            alt="myself"
-                            className="absolute transform bg-[#181818] rounded-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                            width={300}
-                            height={300}
-                        />
+                        <Lottie animationData={animationData} className="lottie absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" loop={true} />
                     </div>
                 </div>
             </div>
         </section>
-
     )
 }
