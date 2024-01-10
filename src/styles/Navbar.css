@@ -8,6 +8,11 @@
     src: url(../assets/fonts/IBMPlexSans-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Kanit-Semi';
+    src: url(../assets/fonts/Kanit-SemiBold.ttf);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -85,4 +90,18 @@
     #atributos{
         display: none;
     }
+}
+
+#enlacesMov {
+    transition: 0.5s;
+    font-family: 'Kanit-Semi';
+}
+
+#enlacesMov li:hover{
+    color: green;
+}
+
+#enlacesMov li:hover {
+    color: rgb(30, 255, 30);
+    text-decoration: none;
 }
