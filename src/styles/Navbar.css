@@ -76,3 +76,13 @@
     width: 100%;
     transform: scaleX(1);
 }
+
+.no-scroll {
+    overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+    #atributos{
+        display: none;
+    }
+}

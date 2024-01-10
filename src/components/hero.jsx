@@ -25,11 +25,11 @@ export function Hero() {
     const LINKEDIN = "https://www.linkedin.com/in/rubén-garcía-bbb452253/"
     const GIT = "https://www.github.com/Mazin04"
     return (
-        <section id="Home" className="mx-auto container py-0 lg:py-4">
+        <section id="Home" className="mx-auto container px-1 lg:py-4">
             <div className='grid grid-cols-1 sm:grid-cols-12'>
                 <div className='col-span-6 place-self-center text-center'>
                     <h1 className='text-green-400 mb-4 lg:leading-[3.5rem] text-xl sm:text-2xl lg:text-[2.15rem] text-center font-extrabold'>
-                        <span id="myName" className="bg-clip-text mb text-5xl sm:text-5xl lg:text-[5.05rem] bg-gradient-to-r from-primary-400 to-secondary-600">
+                        <span id="myName" className="bg-clip-text mb text-5xl sm:text-5xl lg:text-[5.05rem] bg-gradient-to-r from-primary-400 to-secondary-100">
                             Rubén García
                         </span>
                         <br></br>
@@ -47,11 +47,11 @@ export function Hero() {
                             repeat={Infinity}
                         /></h1>
                     <div className='flex flex-row items-center justify-center gap-5 mb-4'>
-                        <a href={LINKEDIN} rel="noreferrer noopener" target="_blank" className='bg-white/30 rounded-lg w-12 h-12 flex justify-center items-center content-center hover:bg-white/100 hover:drop-shadow-2xl transition-all'>
+                        <a href={LINKEDIN} rel="noreferrer noopener" target="_blank" className='bg-white/50 rounded-lg w-12 h-12 flex justify-center items-center content-center hover:bg-white/100 hover:drop-shadow-2xl transition-all'>
                             <SlSocialLinkedin className='w-8 h-8' />
                         </a>
-                        <a href={GIT} rel="noreferrer noopener" target="_blank" className='bg-white/30 rounded-lg w-12 h-12 flex justify-center items-center content-center hover:bg-white/100 hover:drop-shadow-2xl transition-all'>
-                            <FaGithub className='w-8 h-8' />
+                        <a href={GIT} rel="noreferrer noopener" target="_blank" className='bg-white/50 rounded-lg w-12 h-12 flex justify-center items-center content-center hover:bg-white/100 hover:drop-shadow-2xl transition-all'>
+                            <FaGithub className='w-9 h-9' />
                         </a>
                     </div>
                     <div className='flex flex-row items-center justify-center gap-5'>

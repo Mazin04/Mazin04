@@ -11,14 +11,14 @@
 
 #myName{
     font-family: "Kanit-Semi";
-    background: linear-gradient(to right, rgb(0, 100, 255), lime);
+    background: linear-gradient(to right, rgb(217, 0, 255), lime);
     color: transparent;
     background-clip: text;
 }
 
 #btnDownloadCV {
     color: white;
-    background: linear-gradient(to right, rgb(0, 102, 255), lime);
+    background: linear-gradient(to right, rgb(217, 0, 255), lime);
     background-repeat: no-repeat;
     border-radius: 25px;
 }
