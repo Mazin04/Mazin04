@@ -33,9 +33,12 @@
     }
   }
 
-#Top {
-  background-size:cover;
-  background-position: center;
-  background-image: url("./assets/h_wallpaper.png");
-  background-repeat: no-repeat;
-}
+  #Top {
+    position: relative;
+    background-size: cover;
+    background-position: top;
+    background-image: url("./assets/h_wallpaper.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  

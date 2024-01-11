@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect} from 'react';
 import '../styles/Navbar.css';
 import { Link } from 'react-scroll';
 import { FaTimes, FaBars } from "react-icons/fa";
@@ -34,6 +34,7 @@ export function Navbar() {
             document.body.style.overflow = 'auto';
         };
     }, [nav]);
+
 
     return (
         <nav className="fixed top-0 w-screen bg-black/50 backdrop-blur-md z-50">
@@ -71,12 +72,12 @@ export function Navbar() {
                         ))}
                     </ul>
                 </div>
-                <div onClick={() => setNav(!nav)} className='cursor-pointer flex justify-center self-center z-10 md:hidden'>
+                <div onClick={() => setNav(!nav)} className='cursor-pointer flex justify-center self-center z-10 lg:hidden'>
                     {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
                 </div>
                 {nav && (
-                    <ul id="enlacesMov" className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-black/80'>
-                        {links.map(({ id, link }) => (
+                    <ul id="enlacesMov" className={`flex flex-col absolute top-0 left-0 w-full h-screen justify-center items-center bg-black/80`}>
+                    {links.map(({ id, link }) => (
                             <li key={id} className='px-4 cursor-pointer py-6 text-4xl'>
                                 <Link to={link} onClick={() => setNav(!nav)} spy={true} smooth={true}>
                                     {link}
