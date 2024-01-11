@@ -1,6 +1,8 @@
 import { Tilt } from 'react-tilt'
 import '../styles/About.css';
 
+import mePhoto from '../assets/img/me.png'
+
 export function About() {
 
     const defaultOptions = {
@@ -30,7 +32,7 @@ export function About() {
                 <div className='col-span-12 lg:col-span-6 flex items-center mx-4 mt-12 lg:mt-0 justify-center'>
                     <Tilt options={defaultOptions}>
                         <div className='rounded-full bg-slate-600 w-full sm:w-[30rem] h-full sm:h-[30rem] flex items-center justify-center'>
-                            <img src='src/assets/me.png' className='max-w-full max-h-full rounded-full' alt='Photo of myself' />
+                            <img src={mePhoto} className='max-w-full max-h-full rounded-full' alt='Photo of myself' />
                         </div>
                     </Tilt>
                 </div>

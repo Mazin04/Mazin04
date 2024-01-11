@@ -3,6 +3,8 @@ import '../styles/Navbar.css';
 import { Link } from 'react-scroll';
 import { FaTimes, FaBars } from "react-icons/fa";
 
+import logo from '../assets/img/logo.webp'
+
 export function Navbar() {
     const TITULO = 'Rubén García';
 
@@ -51,7 +53,7 @@ export function Navbar() {
                                 <img
                                     draggable="false"
                                     className="lg:relative md:relative flex self-center w-16 cursor-pointer"
-                                    src="src/assets/logo.webp"
+                                    src={logo}
                                     alt="Logo"
                                 />
                                 <div id="nombre" className="cursor-pointer lg:flex md:flex hidden">
