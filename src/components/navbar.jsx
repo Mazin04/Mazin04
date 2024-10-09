@@ -15,7 +15,7 @@ export function Navbar() {
         },
         {
             id: 2,
-            link: "Technologies"
+            link: "Skills"
         },
         {
             id: 3,
@@ -39,7 +39,7 @@ export function Navbar() {
 
 
     return (
-        <nav className="fixed top-0 w-screen bg-black/50 backdrop-blur-md z-50">
+        <nav className="fixed top-0 w-screen bg-black/50 shadow-lg shadow-[#1eff1e]/30 backdrop-blur-md z-50">
             <div className="w-full h-100vh left-0 right-0 flex justify-between text-white lg:py-5 px-10 py-4">
                 <div className="flex items-center self-center justify-start flex-1">
                     <ul className="text-3xl">
@@ -52,7 +52,7 @@ export function Navbar() {
                             >
                                 <img
                                     draggable="false"
-                                    className="lg:relative md:relative flex self-center w-16 cursor-pointer"
+                                    className="lg:relative md:relative flex self-center w-14 cursor-pointer"
                                     src={logo}
                                     alt="Logo"
                                 />

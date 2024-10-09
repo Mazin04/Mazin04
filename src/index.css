@@ -3,42 +3,40 @@
 @tailwind utilities;
 
 .contenedor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    background: #121212;
-    background: linear-gradient(
-      135deg,
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #121212;
+  background: linear-gradient(135deg,
       #121212 25%,
       #1a1a1a 25%,
       #1a1a1a 50%,
       #121212 50%,
       #121212 75%,
       #1a1a1a 75%,
-      #1a1a1a
-    );
-    background-size: 40px 40px;
-  
-    /* Animation */
-    animation: move 4s linear infinite;
-  }
-  
-  @keyframes move {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: 40px 40px;
-    }
+      #1a1a1a);
+  background-size: 40px 40px;
+
+  /* Animation */
+  animation: move 4s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
   }
 
-  #Top {
-    position: relative;
-    background-size: cover;
-    background-position: top;
-    background-image: url("./assets/img/h_wallpaper.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  100% {
+    background-position: 40px 40px;
   }
-  
+}
+
+#Top {
+  position: relative;
+  background-size: cover;
+  background-position: top;
+  background-image: url("./assets/img/h_wallpaper.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

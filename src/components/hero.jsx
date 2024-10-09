@@ -6,6 +6,9 @@ import { TypeAnimation } from 'react-type-animation'
 import { FaGithub } from "react-icons/fa";
 import { SlSocialLinkedin } from "react-icons/sl";
 
+import cv from '../assets/files/CV_RUBEN_GARCIA_SEGOVIANO.pdf'
+
+
 
 export function Hero() {
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -55,7 +58,7 @@ export function Hero() {
                         </a>
                     </div>
                     <div className='flex flex-row items-center justify-center gap-5'>
-                        <button id="btnDownloadCV" className='px-3 py-3 rounded-full text-white'><a rel="noreferrer noopener" href="src\assets\files\CV_RUBEN_GARCIA_SEGOVIANO.pdf" download="CV_RUBEN_GARCIA_SEGOVIANO.pdf" id="aDownload">Download CV</a></button>
+                        <button id="btnDownloadCV" className='px-3 py-3 rounded-full text-white'><a rel="noreferrer noopener" href={cv} download="CV_RUBEN_GARCIA_SEGOVIANO.pdf" id="aDownload">Download CV</a></button>
 
                     </div>
                 </div>
